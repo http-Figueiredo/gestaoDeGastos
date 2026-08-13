@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Controle de Gastos</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Controle de Gastos</h1>
+    
+    <div>
+        <h2>Total gasto</h2>
+        <p>R$ 0,00</p>
+    </div>
+    
+    <div>
+        <h2>Quantidade de gastos</h2>
+        <p>0</p>
+    </div>
+
+    <form>
+        <label for="local">Estabelecimento</label>
+        <input name="local" type="text" id="local" required>
+        <label for="value">Valor</label>
+        <input name="value" type="number" id="value" required>
+        <label for="category">Categoria</label>
+        <select name="category" id="category" required>
+            <option value="" disabled selected>--Selecione--</option>
+            <option value="mercado">Mercado</option>
+            <option value="alimentacao">Alimentação</option>
+            <option value="posto">Posto</option>
+            <option value="casa">Casa</option>
+            <option value="lazer">Lazer</option>
+            <option value="saude">Saúde</option>
+            <option value="estudos">Estudos</option>
+            <option value="futilidades">Futilidades</option>
+        </select>
+        <label for="date">Data</label>
+        <input name="date" type="date" id="date" required>
+        <label for="description">Descrição</label>
+        <input name="description" type="text" id="description">
+        <button>Adicionar gasto</button>
+    </form>
+
+    <h3>Gastos</h3>
+    <ul>
+        
+    </ul>
+</body>
+</html>
